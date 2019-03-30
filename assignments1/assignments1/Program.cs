@@ -9,27 +9,27 @@ namespace assignments1
 {
     public class Complex
     {
-       public double real;
-       public double unreal;
+        public double real;
+        public double unreal;
 
         public Complex(double real, double unreal)
         {
             this.real = real;
             this.unreal = unreal;
         }
-        public static Complex operator + (Complex one, Complex two)
+        public static Complex operator +(Complex one, Complex two)
         {
             return new Complex(one.real + two.real, one.unreal + two.unreal);
         }
-        public static Complex operator - (Complex one, Complex two)
+        public static Complex operator -(Complex one, Complex two)
         {
             return new Complex(one.real - two.real, one.unreal - two.unreal);
         }
-        public static Complex operator * (Complex one, Complex two)
+        public static Complex operator *(Complex one, Complex two)
         {
             return new Complex((one.real * two.real) - (one.unreal * two.unreal), (one.real * two.unreal) + (one.unreal * two.real));
         }
-        public static Complex operator / (Complex one, Complex two)
+        public static Complex operator /(Complex one, Complex two)
         {
             double square = Math.Pow(two.real, 2) + Math.Pow(two.unreal, 2);
             double a = ((one.real * two.real) + (one.unreal * two.unreal)) / square;
