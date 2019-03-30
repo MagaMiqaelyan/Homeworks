@@ -52,11 +52,11 @@ namespace Brackets
             {
                 return false;
             }
-            return (brackets[i] == '0' && brackets.Count() == 0) ? true : false;
+            return brackets.First() == '0' ? true : false;
         }
         static void Main(string[] args)
         {
-            Console.WriteLine(IsBalanced("[{}([()])"));
+            Console.WriteLine(IsBalanced("{}([[]()])"));
         }
     }
 }
