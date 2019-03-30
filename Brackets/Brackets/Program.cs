@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Parenthesses
+namespace Brackets
 {
     class Program
     {
@@ -17,7 +17,7 @@ namespace Parenthesses
             if (a == '{' && b == '}')
                 return true;
             else return false;
-        
+
         }
         public static bool IsBalanced(string str)
         {
@@ -36,10 +36,10 @@ namespace Parenthesses
                     }
                     else if (ClBrackets.Contains(c))
                     {
-                        if (Check(brackets[i-1], c))
+                        if (Check(brackets[i - 1], c))
                         {
-                            brackets[i-1] = '0';
-                            i--;                            
+                            brackets[i - 1] = '0';
+                            i--;
                         }
                         else
                             return false;
@@ -56,7 +56,7 @@ namespace Parenthesses
         }
         static void Main(string[] args)
         {
-            Console.WriteLine(IsBalanced("{}([()])")); 
+            Console.WriteLine(IsBalanced("{}([()])"));
         }
     }
 }
