@@ -56,7 +56,7 @@ namespace Brackets
         }
         static void Main(string[] args)
         {
-            Console.WriteLine(IsBalanced("{}([[]}()])"));
+            Console.WriteLine(IsBalanced("{}([[]()])"));
         }
     }
 }
