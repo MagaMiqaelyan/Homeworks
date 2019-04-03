@@ -17,6 +17,7 @@ namespace SortingAlgorithms
     {
         static void Help(string[] arr, string str)
         {
+            //str.Split();
             for (int i = 0; i < Convert.ToInt32(str.Last()) - Convert.ToInt32(str.First()) + 1; i++)
             {               
                 if (str.Contains('-'))
@@ -61,9 +62,9 @@ namespace SortingAlgorithms
             }
 
             Console.WriteLine("\nSelect which algorithm you want to perform:\n 1.Insertion sort \n 2.Bubble sort\n 3.Quick sort\n 4.Heap sort\n 5.Merge sort\n 6.All");
-            string j = Console.ReadLine();
+            string NumberSorted = Console.ReadLine();
             string[] a = new string[unsorted.Length];
-            Help(a, j);
+            Help(a, NumberSorted);
             for (int i=0; i < a.Length; i++)
             {
                 switch (a[i])

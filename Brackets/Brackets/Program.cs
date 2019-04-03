@@ -23,7 +23,7 @@ namespace Brackets
         {
             char[] OpBrackets = { '(', '[', '{' };
             char[] ClBrackets = { ')', ']', '}' };
-            char[] brackets = new char[5];
+            char[] brackets = new char[str.Length];
             int i = 0;
             try
             {
@@ -56,7 +56,7 @@ namespace Brackets
         }
         static void Main(string[] args)
         {
-            Console.WriteLine(IsBalanced("{}([[]()])"));
+            Console.WriteLine(IsBalanced("{{[[(())]]}}"));
         }
     }
 }
