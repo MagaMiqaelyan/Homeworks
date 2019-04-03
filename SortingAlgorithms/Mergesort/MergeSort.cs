@@ -10,11 +10,18 @@ namespace Mergesort
     {
         public static void Merge(int[] arr)
         {
+            Stopwatch stopwatch = new Stopwatch();
+            stopwatch.Start();
+
             MergeDo(arr, 0, arr.Length - 1);
-            for (int i = 0; i < arr.Length; i++)
-            {
-                Console.Write(arr[i] + " ");
-            }
+
+            stopwatch.Stop();
+            Console.WriteLine("Time elapsed: {0}", stopwatch.Elapsed);
+            Console.WriteLine("GetMamory is " + GC.GetTotalMemory(false));
+            //for (int i = 0; i < arr.Length; i++)
+            //{
+            //    Console.Write(arr[i] + " ");
+            //}
         }
 
         private static void MergeDo(int[] arr, int left, int right)

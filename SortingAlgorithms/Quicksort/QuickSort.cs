@@ -14,6 +14,7 @@ namespace Quicksort
 
             stopwatch.Stop();
             Console.WriteLine("Time elapsed: {0}", stopwatch.Elapsed);
+            Console.WriteLine("GetMamory is " + GC.GetTotalMemory(false));
             //for (int i = 0; i < arr.Length; i++)
             //{
             //    Console.Write(arr[i] + " ");

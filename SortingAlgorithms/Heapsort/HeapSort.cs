@@ -17,6 +17,7 @@ namespace Heapsort
             //}
             stopwatch.Stop();
             Console.WriteLine("Time elapsed: {0}", stopwatch.Elapsed);
+            Console.WriteLine("GetMamory is "+ GC.GetTotalMemory(false));
         }
         private static void HeapHelp(int[] arr)
         {
