@@ -24,9 +24,9 @@ namespace SortingAlgorithms
                 {
                     arr[i] = (Convert.ToInt32(new string(str[0],1)) + i).ToString();
                     continue;
-                }                
-                if (str[i] == ',')                                   
-                    continue;                
+                }
+                if (str[i] == ',')
+                    continue;
                 else
                     arr[i] = str[i].ToString();
             }
