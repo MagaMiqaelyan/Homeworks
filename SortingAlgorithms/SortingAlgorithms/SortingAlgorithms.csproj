@@ -53,8 +53,8 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ClassLibrary1\Bublesort.csproj">
-      <Project>{33c41fab-a7ee-4245-a04b-8422fe62f8f8}</Project>
+    <ProjectReference Include="..\Bublesort\Bublesort.csproj">
+      <Project>{99d7b662-bbe3-43e2-9b34-c85894a6cf9d}</Project>
       <Name>Bublesort</Name>
     </ProjectReference>
     <ProjectReference Include="..\Heapsort\Heapsort.csproj">

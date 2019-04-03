@@ -5,15 +5,15 @@ VisualStudioVersion = 15.0.28307.271
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortingAlgorithms", "SortingAlgorithms\SortingAlgorithms.csproj", "{B7B01CF9-87E5-44FD-A671-6BC096F4E427}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bublesort", "ClassLibrary1\Bublesort.csproj", "{33C41FAB-A7EE-4245-A04B-8422FE62F8F8}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Insertionsort", "Insertionsort\Insertionsort.csproj", "{489A9111-630D-4627-8251-68B3AA0381F2}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Heapsort", "Heapsort\Heapsort.csproj", "{55143DC2-4A04-4746-AD4B-F65A0899217E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quicksort", "Quicksort\Quicksort.csproj", "{E6FE190A-3EA8-4399-90D0-5A85B7BF6D45}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quicksort", "Quicksort\Quicksort.csproj", "{E6FE190A-3EA8-4399-90D0-5A85B7BF6D45}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mergesort", "Mergesort\Mergesort.csproj", "{016D95F6-30EA-401B-ACB6-2E4A86324E34}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mergesort", "Mergesort\Mergesort.csproj", "{016D95F6-30EA-401B-ACB6-2E4A86324E34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bublesort", "Bublesort\Bublesort.csproj", "{99D7B662-BBE3-43E2-9B34-C85894A6CF9D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,10 +25,6 @@ Global
 		{B7B01CF9-87E5-44FD-A671-6BC096F4E427}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B7B01CF9-87E5-44FD-A671-6BC096F4E427}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B7B01CF9-87E5-44FD-A671-6BC096F4E427}.Release|Any CPU.Build.0 = Release|Any CPU
-		{33C41FAB-A7EE-4245-A04B-8422FE62F8F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{33C41FAB-A7EE-4245-A04B-8422FE62F8F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{33C41FAB-A7EE-4245-A04B-8422FE62F8F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{33C41FAB-A7EE-4245-A04B-8422FE62F8F8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{489A9111-630D-4627-8251-68B3AA0381F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{489A9111-630D-4627-8251-68B3AA0381F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{489A9111-630D-4627-8251-68B3AA0381F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -45,6 +41,10 @@ Global
 		{016D95F6-30EA-401B-ACB6-2E4A86324E34}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{016D95F6-30EA-401B-ACB6-2E4A86324E34}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{016D95F6-30EA-401B-ACB6-2E4A86324E34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99D7B662-BBE3-43E2-9B34-C85894A6CF9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99D7B662-BBE3-43E2-9B34-C85894A6CF9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99D7B662-BBE3-43E2-9B34-C85894A6CF9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99D7B662-BBE3-43E2-9B34-C85894A6CF9D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
