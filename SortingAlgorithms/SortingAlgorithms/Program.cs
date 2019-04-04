@@ -15,21 +15,27 @@ namespace SortingAlgorithms
 {
     class Program
     {
-        static void Help(string[] arr, string str)
-        {
-            //str.Split();
-            for (int i = 0; i < Convert.ToInt32(str.Last()) - Convert.ToInt32(str.First()) + 1; i++)
-            {               
-                if (str.Contains('-'))
+        static void Help(char[] arr, string str)
+        {            
+            if (str.Contains(','))
+            {
+                str.Split(',');
+                for (int i = 0; i < str.Length; i++)
                 {
-                    arr[i] = (Convert.ToInt32(new string(str[0],1)) + i).ToString();
-                    continue;
+                    arr[i] = str[i];
                 }
-                if (str[i] == ',')
-                    continue;
-                else
-                    arr[i] = str[i].ToString();
             }
+            if (str.Contains('-'))
+            {
+                str.Split();
+                for (int i = 0; i < str.Last() - str.First() + 1; i++)
+                {
+                    arr[i] = (Char)((int)str[0] + i);
+                }
+            }
+            else
+                arr[0] = str[0];
+            
         }
         static void Main(string[] args)
         {
@@ -63,33 +69,33 @@ namespace SortingAlgorithms
 
             Console.WriteLine("\nSelect which algorithm you want to perform:\n 1.Insertion sort \n 2.Bubble sort\n 3.Quick sort\n 4.Heap sort\n 5.Merge sort\n 6.All");
             string NumberSorted = Console.ReadLine();
-            string[] a = new string[unsorted.Length];
+            char[] a = new char[unsorted.Length];
             Help(a, NumberSorted);
             for (int i=0; i < a.Length; i++)
             {
                 switch (a[i])
                 {
-                    case "1":
+                    case '1':
                         Console.WriteLine("Insertion sort");
                         InsertionSort.Insertion(unsorted1);
                         break;
-                    case "2":
+                    case '2':
                         Console.WriteLine("Bubble sort");
                         BubleSort.Buble(unsorted2);
                         break;
-                    case "3":
+                    case '3':
                         Console.WriteLine("Quick sort");
                         QuickSort.Quick(unsorted3);
                         break;
-                    case "4":
+                    case '4':
                         Console.WriteLine("Heap sort");
                         HeapSort.Heap(unsorted4);
                         break;
-                    case "5":
+                    case '5':
                         Console.WriteLine("Merge sort");
                         MergeSort.Merge(unsorted5);
                         break;
-                    case "6":
+                    case '6':
                         Console.WriteLine("All");
                         Console.Write("Insertion sort: ");
                         InsertionSort.Insertion(unsorted1);
