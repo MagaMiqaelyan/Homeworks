@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B7B01CF9-87E5-44FD-A671-6BC096F4E427}</ProjectGuid>
+    <ProjectGuid>{628F86D7-66BC-4F41-932A-8FAD6F58E538}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>SortingAlgorithms</RootNamespace>
-    <AssemblyName>SortingAlgorithms</AssemblyName>
+    <RootNamespace>Concert</RootNamespace>
+    <AssemblyName>Concert</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,19 +43,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BubleSort.cs" />
-    <Compile Include="HeapSort.cs" />
-    <Compile Include="InsertionSort.cs" />
-    <Compile Include="MergeSort.cs" />
+    <Compile Include="Band.cs" />
+    <Compile Include="Musician.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QuickSort.cs" />
+    <Compile Include="Venue.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

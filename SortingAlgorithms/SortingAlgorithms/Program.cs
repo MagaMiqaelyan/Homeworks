@@ -8,7 +8,7 @@ using Bublesort;
 using Heapsort;
 using Insertionsort;
 using Mergesort;
-using Quicksort;
+
 
 
 namespace SortingAlgorithms
@@ -70,31 +70,40 @@ namespace SortingAlgorithms
                         break;
                     case '2':
                         Console.WriteLine("Bubble sort");
+                        Array.Copy(Unsorted, UnsorteCopy, Unsorted.Length);
                         BubleSort.Buble(UnsorteCopy);
                         break;
                     case '3':
                         Console.WriteLine("Quick sort");
-                        QuickSort.Quick(UnsorteCopy);
+                        Array.Copy(Unsorted, UnsorteCopy, Unsorted.Length);
+                        QuickSort.Quick(UnsorteCopy);                        
                         break;
                     case '4':
                         Console.WriteLine("Heap sort");
+                        Array.Copy(Unsorted, UnsorteCopy, Unsorted.Length);
                         HeapSort.Heap(UnsorteCopy);
                         break;
                     case '5':
                         Console.WriteLine("Merge sort");
+                        Array.Copy(Unsorted, UnsorteCopy, Unsorted.Length);
                         MergeSort.Merge(UnsorteCopy);
                         break;
                     case '6':
                         Console.WriteLine("All");
                         Console.Write("Insertion sort: ");
+                        Array.Copy(Unsorted, UnsorteCopy, Unsorted.Length);
                         InsertionSort.Insertion(UnsorteCopy);
                         Console.Write("\nBubble sort: ");
+                        Array.Copy(Unsorted, UnsorteCopy, Unsorted.Length);
                         BubleSort.Buble(UnsorteCopy);
                         Console.Write("\nQuick sort: ");
+                        Array.Copy(Unsorted, UnsorteCopy, Unsorted.Length);
                         QuickSort.Quick(UnsorteCopy);
                         Console.Write("\nHeap sort: ");
+                        Array.Copy(Unsorted, UnsorteCopy, Unsorted.Length);
                         HeapSort.Heap(UnsorteCopy);
                         Console.Write("\nMerge sort: ");
+                        Array.Copy(Unsorted, UnsorteCopy, Unsorted.Length);
                         MergeSort.Merge(UnsorteCopy);
                         break;
                     default:
