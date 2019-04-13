@@ -7,11 +7,15 @@ using System.Threading.Tasks;
 namespace RollingDie
 {
     class EventOfDie
-    {        
-        public delegate void Rollingdie(int contant);
-        public event Rollingdie TwoFoursInRow; // The row has two 4 number
-        public event Rollingdie SumOfNumber; // The sum of numbers
+    {   
+        public delegate void Rollingdie(int contant); // Declare delegate 
+        public event Rollingdie TwoFoursInRow; // Declare event of type delegate
+        public event Rollingdie SumOfNumber; // Declare event of type delegate
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="die">Die numbers' array</param>
         public EventOfDie(int[] die)
         {            
             Random random = new Random();
@@ -21,9 +25,13 @@ namespace RollingDie
             }
                 Print(die);            
         }
-         public void Events(int[] die)
-         {            
 
+        /// <summary>
+        /// Event is happened
+        /// </summary>
+        /// <param name="die">Die numbers' array</param>
+        public void Events(int[] die)
+        {          
             if (TwoFoursInRow != null && TwoNumbers(die) == 2)
             {
                 this.TwoFoursInRow(TwoNumbers(die));
@@ -33,10 +41,10 @@ namespace RollingDie
             {
                 this.SumOfNumber(Sum(die));
             }
-         }
+        }
 
         /// <summary>
-        /// Check if die shows two fours in a row
+        /// Numbers count in a row
         /// </summary>
         /// <param name="arr">Die</param>
         /// <returns></returns>
