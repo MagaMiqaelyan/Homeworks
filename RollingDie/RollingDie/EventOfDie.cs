@@ -8,7 +8,8 @@ namespace RollingDie
 {
     class EventOfDie
     {   
-        public delegate void Rollingdie(int contant); // Declare delegate 
+        private int[] Die { get; set; }
+        public delegate void Rollingdie(); // Declare delegate 
         public event Rollingdie TwoFoursInRow; // Declare event of type delegate
         public event Rollingdie SumOfNumber; // Declare event of type delegate
 
@@ -16,72 +17,74 @@ namespace RollingDie
         /// Constructor
         /// </summary>
         /// <param name="die">Die numbers' array</param>
-        public EventOfDie(int[] die)
-        {            
+        public EventOfDie()
+        {
+            Die = new int[50];
             Random random = new Random();
-            for (int j = 0; j < die.Length; j++)
+            for (int j = 0; j < 50; j++)
             {
-                die[j] = random.Next(1, 7);
+                this.Die[j] = random.Next(1, 7);             
+            }           
+        }
+              
+        public int this[int i]
+        {
+            get
+            {
+                return this.Die[i];
             }
-                Print(die);            
+            set
+            {
+                this.Die[i] = value;
+            }
         }
 
         /// <summary>
         /// Event is happened
         /// </summary>
         /// <param name="die">Die numbers' array</param>
-        public void Events(int[] die)
-        {          
-            if (TwoFoursInRow != null && TwoNumbers(die) == 2)
-            {
-                this.TwoFoursInRow(TwoNumbers(die));
-            }
-
-            if (SumOfNumber != null && Sum(die) >= 20)
-            {
-                this.SumOfNumber(Sum(die));
-            }
-        }
-
-        /// <summary>
-        /// Numbers count in a row
-        /// </summary>
-        /// <param name="arr">Die</param>
-        /// <returns></returns>
-        private int TwoNumbers(int[] die)
+        public void Events(EventOfDie die)
         {
-            int count = 0;
-            for (int i = 0; i < die.Length; i++)
+            for (int i = 0; i < 50; i++)
             {
-                if (die[i]==4)
+                if (TwoFoursInRow != null && i < 49 && die[i] == 4 && die[i + 1] == 4)
                 {
-                    count++;
+                    Console.Write(die[i] + " " + die[i + 1]);
+                    this.TwoFoursInRow();
                 }
+
+                if (SumOfNumber != null && i < 45 && Sum(i, i + 5, die))
+                {
+                    for (int k = i; k < i + 5; k++)
+                    {
+                        Console.Write(die[k] + " ");
+                    }
+                    this.SumOfNumber();
+
+                }
+                else Console.Write(die[i] + " ");
             }
-            return count;     
         }
 
         /// <summary>
-        /// Count summary of the numbers
+        /// Count summary
         /// </summary>
-        /// <param name="die">Die</param>
+        /// <param name="start">First number index</param>
+        /// <param name="end">Last number index</param>
+        /// <param name="die">Sequence of numbers</param>
         /// <returns></returns>
-        private int Sum(int[] die)
+        private bool Sum(int start, int end, EventOfDie die)
         {
             int sum = 0;
-            for (int i = 0; i < die.Length; i++)
+            for (int i = start; i < end; i++)
             {
                 sum += die[i];
             }
-            return sum;
-        }
-
-        public void Print(int[] die)
-        {
-            for (int i = 0; i < die.Length; i++)
+            if (sum >= 20)
             {
-                Console.Write(die[i] + " ");
+                return true;
             }
+            else return false;
         }
 
     }
