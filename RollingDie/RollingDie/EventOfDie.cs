@@ -27,7 +27,7 @@ namespace RollingDie
                     this.TwoFoursInRow(); // Raise event
                 }
 
-                if (die.Count >= 5 && SumOfNumber != null && Sum(die, i - 4, i)) 
+                if (die.Count >= 5 && SumOfNumber != null && Sum(die, i - 4, i)) // Check if summary greater than 20
                 {
                     for (int k = i - 4; k <= i; ++k)
                     {
