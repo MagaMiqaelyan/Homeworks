@@ -46,7 +46,7 @@ namespace RollingDie
         /// <param name="Sum">Sequence of numbers</param>
         /// <param name="start">First number</param>
         /// <param name="end">Last number</param>
-        /// <returns>True if summary greater 20 or equal 20 ans false otherwise</returns>
+        /// <returns>True if summary greater 20 or equal 20 and false otherwise</returns>
         private bool Sum(List<int> Sum, int start, int end)
         {
             int sum = 0;
