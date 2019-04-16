@@ -12,9 +12,10 @@ namespace RollingDie
         {
             Console.WriteLine("Rolling a die");
             EventOfDie die = new EventOfDie();
+            List<int> list = new List<int>();
             die.TwoFoursInRow += Die_TwoFoursInRow; // Subscribe to event that raise if there are two fours in a row
             die.SumOfNumber += Die_SumOfNumber; // Subscribe to event that raise if the summary greater 20
-            die.Events(die);
+            die.Events(list);
                   
         }       
         
@@ -33,7 +34,7 @@ namespace RollingDie
         /// <param name="sum"></param>
         private static void Die_SumOfNumber()
         {
-            Console.WriteLine("\nSummary is greater than 20");
+            Console.WriteLine("\nSummary is greater than 20 or equal 20");
             
         }
     }
