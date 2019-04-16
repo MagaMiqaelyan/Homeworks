@@ -17,7 +17,7 @@ namespace RollingDie
         /// </summary>
         /// <param name="die">Die numbers' list</param>
         public void Events(List<int> die)
-        {            
+        {
             Random random = new Random();
 
             for (int i = 0; i < 50; ++i)
