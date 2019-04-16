@@ -1,13 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RollingDie
 {
     class EventOfDie
-    { 
+    {
         public delegate void Rollingdie(); // Declare delegate 
         public event Rollingdie TwoFoursInRow; // Declare event of type delegate
         public event Rollingdie SumOfNumber; // Declare event of type delegate
@@ -32,7 +29,7 @@ namespace RollingDie
 
                 if (die.Count >= 5 && SumOfNumber != null && Sum(die, i - 4, i)) // Check if summary greater 20
                 {
-                    for (int k = i - 4; k <= i; ++k) 
+                    for (int k = i - 4; k <= i; ++k)
                     {
                         Console.Write(die[k] + " ");
                     }

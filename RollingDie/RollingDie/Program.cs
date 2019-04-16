@@ -1,13 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RollingDie
 {
     class Program
-    {        
+    {
         static void Main(string[] args)
         {
             Console.WriteLine("Rolling a die");
@@ -16,7 +13,7 @@ namespace RollingDie
             die.TwoFoursInRow += Die_TwoFoursInRow; // Subscribe to event that raise if there are two fours in a row
             die.SumOfNumber += Die_SumOfNumber; // Subscribe to event that raise if the summary greater 20
             die.Events(list);
-                  
+
         }
 
         /// <summary>
@@ -33,7 +30,7 @@ namespace RollingDie
         private static void Die_SumOfNumber()
         {
             Console.WriteLine("\nSummary is greater than 20 or equal 20");
-            
+
         }
     }
 }

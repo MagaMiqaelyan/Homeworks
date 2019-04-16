@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.271
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RollingDie", "RollingDie\RollingDie.csproj", "{B40EAF2F-E45E-4F70-8B32-AAB4C1E58A44}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RollingDie", "RollingDie\RollingDie.csproj", "{16AB08D9-16CD-4F41-B77B-997B4B9D09D3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B40EAF2F-E45E-4F70-8B32-AAB4C1E58A44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B40EAF2F-E45E-4F70-8B32-AAB4C1E58A44}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B40EAF2F-E45E-4F70-8B32-AAB4C1E58A44}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B40EAF2F-E45E-4F70-8B32-AAB4C1E58A44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16AB08D9-16CD-4F41-B77B-997B4B9D09D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16AB08D9-16CD-4F41-B77B-997B4B9D09D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16AB08D9-16CD-4F41-B77B-997B4B9D09D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16AB08D9-16CD-4F41-B77B-997B4B9D09D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {D11D1DF3-E842-47D8-BC5B-45E1AC62A0E2}
+		SolutionGuid = {0B951F50-E490-4D12-B1C3-FADFFFE88F1A}
 	EndGlobalSection
 EndGlobal
