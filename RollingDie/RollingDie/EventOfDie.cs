@@ -15,7 +15,7 @@ namespace RollingDie
         /// <summary>
         /// Event is happened
         /// </summary>
-        /// <param name="die">Die numbers' array</param>
+        /// <param name="die">Die numbers' list</param>
         public void Events(List<int> die)
         {            
             Random random = new Random();
@@ -44,11 +44,11 @@ namespace RollingDie
         }
 
         /// <summary>
-        /// Count summary
+        /// Count summary and compare with 20
         /// </summary>
-        /// <param name="start">First number index</param>
-        /// <param name="end">Last number index</param>
-        /// <param name="die">Sequence of numbers</param>
+        /// <param name="Sum">Sequence of numbers</param>
+        /// <param name="start">First number</param>
+        /// <param name="end">Last number</param>
         /// <returns></returns>
         private bool Sum(List<int> Sum, int start, int end)
         {
