@@ -13,14 +13,6 @@ namespace RollingDie
         public event Rollingdie SumOfNumber; // Declare event of type delegate
 
         /// <summary>
-        /// Constructor
-        /// </summary>
-        /// <param name="die">Die numbers' array</param>
-        public EventOfDie()
-        {         
-        }
-       
-        /// <summary>
         /// Event is happened
         /// </summary>
         /// <param name="die">Die numbers' array</param>
