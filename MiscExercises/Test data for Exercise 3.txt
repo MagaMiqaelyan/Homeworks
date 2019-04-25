@@ -1,0 +1,18 @@
+ATL US Super Mega
+PEK CN Mega
+LAX US Mega
+ORD US Mega
+HND JP Super Mega
+LHR UK Large
+DEN US Large
+CDG FR Medium
+AMS NL Medium
+MAD ES Medium
+LAS US Medium
+HBE EG Small
+CPT ZA Small
+CAI EG Medium
+FRA GE Large
+HAM GE Medium
+FCO IT Large
+VRN IT Small
