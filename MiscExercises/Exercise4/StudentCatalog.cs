@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Exercise4
 {
@@ -87,11 +84,7 @@ namespace Exercise4
             for (double i = 0; i < 3; ++i)
             {
                 HighestScoreStudents.Add(avg[i]);
-            }
-            for (int i = 0; i < HighestScoreStudents.Count; i++)
-            {
-                Console.WriteLine(HighestScoreStudents[i]);
-            }
+            }           
         
             return HighestScoreStudents;
         }

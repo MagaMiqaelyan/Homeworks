@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Exercise4
 {
@@ -11,7 +9,7 @@ namespace Exercise4
         static void Main(string[] args)
         {
             StudentCatalog students = new StudentCatalog();
-
+            
             Student anna = new Student(12, "Anna");
             Student betty = new Student(338, "Betty");
             Student carl = new Student(92, "Carl");
