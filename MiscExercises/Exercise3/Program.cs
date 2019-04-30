@@ -15,7 +15,7 @@ namespace Exercise3
             Sort(airports);
             foreach (var item in airports)
             {
-                Console.WriteLine("Name: {0}   Country Code: {1}   Size: {2}", item.Name, item.CountryCode, item.Size);
+                Console.WriteLine("Name: {0}  Country Code: {1}  Size: {2}", item.Name, item.CountryCode, item.Size);
             }
         }
 
