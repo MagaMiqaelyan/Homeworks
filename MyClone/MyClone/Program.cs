@@ -6,7 +6,6 @@ namespace MyClone
     {
         static void Main(string[] args)
         {
-
             var employee = new Employee()
             {
                 name = "Armen",
@@ -28,10 +27,9 @@ namespace MyClone
             Console.WriteLine("Age: " + person.age);
             Console.WriteLine("Weight: " + person.weight);
             Console.WriteLine("Height: " + person.height);
-
-            Console.WriteLine("\nCopy person\n");
+            
             Person personclone = (Person)person.Clone();
-
+            Console.WriteLine("\nCopy person\n");
             Console.WriteLine("First name: " + personclone.firstname);
             Console.WriteLine("Last name: " + personclone.lastname);
             Console.WriteLine("Age: " + personclone.age);
@@ -42,10 +40,9 @@ namespace MyClone
             Console.WriteLine("Salary: " + employee.salary);
             Console.WriteLine("Bonus: " + employee.salarybonus);
             Console.WriteLine("Salary day: " + employee.salaryday);
-
-            Console.WriteLine("\nCopy employee\n");
+            
             Employee employeeclone = (Employee)employee.Clone();
-
+            Console.WriteLine("\nCopy employee\n");
             Console.WriteLine("Name: " + employeeclone.name);
             Console.WriteLine("Salary: " + employeeclone.salary);
             Console.WriteLine("Bonus: " + employeeclone.salarybonus);
