@@ -29,7 +29,7 @@ namespace MyClone
             Console.WriteLine("Weight: " + person.weight);
             Console.WriteLine("Height: " + person.height);
 
-            Console.WriteLine("\nCopy person ");
+            Console.WriteLine("\nCopy person\n");
             Person personclone = (Person)person.Clone();
 
             Console.WriteLine("First name: " + personclone.firstname);
@@ -40,15 +40,15 @@ namespace MyClone
 
             Console.WriteLine("\nName: " + employee.name);
             Console.WriteLine("Salary: " + employee.salary);
-            Console.WriteLine("Bonus: " + employee.salary);
+            Console.WriteLine("Bonus: " + employee.salarybonus);
             Console.WriteLine("Salary day: " + employee.salaryday);
 
-            Console.WriteLine("\nCopy employee ");
+            Console.WriteLine("\nCopy employee\n");
             Employee employeeclone = (Employee)employee.Clone();
 
             Console.WriteLine("Name: " + employeeclone.name);
             Console.WriteLine("Salary: " + employeeclone.salary);
-            Console.WriteLine("Bonus: " + employeeclone.salary);
+            Console.WriteLine("Bonus: " + employeeclone.salarybonus);
             Console.WriteLine("Salary day: " + employeeclone.salaryday);
         }
     }
