@@ -42,7 +42,7 @@ namespace Multimap
 
         public void Clear()
         {
-            
+            multimap.Clear();
         }
 
         public bool Contains(KeyValuePair<TKey, HashSet<TValue>> item)
