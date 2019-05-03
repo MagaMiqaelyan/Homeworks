@@ -40,7 +40,10 @@ namespace MultiMap
             }
             if (multimap.Keys.Contains(key))
             {
-                throw new ArgumentException();
+                foreach (var values in value)
+                {
+                    multimap[key].Add(values);
+                }     
             }
             else
             {
