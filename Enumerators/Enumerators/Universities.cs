@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 
 namespace Enumerators
 {
-    class Universities : IEnumerable
+    class Universities : IEnumerable<University>
     {
         private List<University> universities = new List<University>();
 
@@ -21,16 +21,24 @@ namespace Enumerators
         }
 
         /// <summary>
-        /// Implementation for the GetEnumerator method.
+        /// Implementation for the GetEnumerator method for generic.
         /// </summary>
-        /// <returns> Returns an enumerator that iterates through a collection. </returns>
-        IEnumerator IEnumerable.GetEnumerator()
+        /// <returns> Returns an enumerator that iterates through a collection.</returns>
+        public IEnumerator<University> GetEnumerator()
         {
             return new UniversityEnum(universities);
         }
+
+        /// <summary>
+        /// Implementation for the GetEnumerator method for non-generic.
+        /// </summary>
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return GetEnumerator();
+        }
        
     }
-    class UniversityEnum : IEnumerator
+    class UniversityEnum : IEnumerator<University>
     {
         private List<University> universities;
         int position = -1; // Enumerators are positioned before the first element.
@@ -86,7 +94,14 @@ namespace Enumerators
         public void Reset()
         {
             position = -1;
-        }       
+        }
 
+        /// <summary>
+        /// To close or release unmanaged resources
+        /// </summary>
+        public void Dispose()
+        {
+            this.position = -1;
+        }
     }
 }
