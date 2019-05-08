@@ -13,13 +13,22 @@ namespace Exceptions
             int[] arr = new int[5];
             //AddElement(arr, 8); // IndexOutOfRangeException
             // Division(4, 0); // DivideByZeroException
-
+            try
+            {
+                Client client = new Client(10, "Anna");
+                client.Add(10, "Armen");
+            }
+            catch (ClientException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
             // My exception
-            Client client = new Client(10, "Anna");
-            client.Add(15, "Armen");
-            Console.WriteLine(client.FindClient(15));
+           
+            //Console.WriteLine(client.FindClient(15));
             //Console.WriteLine(client.FindClient(12));
-            client.Add(10, "Tigran");
+           // client.Add(10, "Tigran");
+
+
         }
 
 
