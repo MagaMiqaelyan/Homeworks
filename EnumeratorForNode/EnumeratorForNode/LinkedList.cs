@@ -102,7 +102,7 @@ namespace EnumeratorForNode
             this.first = true;
         }
 
-        public object Current => this.current.data;
+        public object Current => this.Current;
 
         T IEnumerator<T>.Current => this.current.data;   // Gets the data at the current node.        
                 
