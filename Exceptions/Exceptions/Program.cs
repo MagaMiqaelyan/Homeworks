@@ -11,7 +11,7 @@ namespace Exceptions
         static void Main(string[] args)
         {
             int[] arr = new int[5];
-            //AddElement(arr, 8); // IndexOutOfRangeException
+            AddElement(arr, 8); // IndexOutOfRangeException
             // Division(4, 0); // DivideByZeroException
             try
             {
@@ -49,7 +49,8 @@ namespace Exceptions
             }
             catch (IndexOutOfRangeException ex)
             {
-                throw ex;                
+                Console.WriteLine("{0}", ex);
+                throw ex;
             }
         }
 
