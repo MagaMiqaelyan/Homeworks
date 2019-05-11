@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -12,12 +9,12 @@ namespace ThreadExamples
         static void Main(string[] args)
         {
             Console.Write("Please input array length ");
-            int length = Convert.ToInt32(Console.ReadLine());
-            int[] array = new int[length];
+            int lngth = Convert.ToInt32(Console.ReadLine());
+            int[] array = new int[lngth];
             int sum = 0;
             Random random = new Random();
 
-            for (int item = 0; item < length; ++item) 
+            for (int item = 0; item < lngth; ++item) 
             {
                 array[item] = random.Next(1, 5);
                 Console.Write(array[item] + " ");
@@ -38,7 +35,7 @@ namespace ThreadExamples
             Console.Write("Please input Threads count ");
             int countofthreads = Convert.ToInt32(Console.ReadLine());
             int SumWithParallelFor = 0;
-            Parallel.For(0, length, new ParallelOptions { MaxDegreeOfParallelism = countofthreads },
+            Parallel.For(0, lngth, new ParallelOptions { MaxDegreeOfParallelism = countofthreads },
                          () => 0,
                          (j, loop, summary) =>
                          {
