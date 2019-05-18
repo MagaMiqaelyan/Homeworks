@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C879F615-B8E5-4704-AABB-0FBBF9241707}</ProjectGuid>
+    <ProjectGuid>{63A08AD9-893C-471C-B6F0-D1623846A7F5}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Sample</RootNamespace>
-    <AssemblyName>Sample</AssemblyName>
+    <RootNamespace>ParallelLoops</RootNamespace>
+    <AssemblyName>ParallelLoops</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
