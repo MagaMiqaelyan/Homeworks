@@ -48,7 +48,7 @@ namespace CopyFile
             }
         }
         /// <summary>
-        /// Calculate how many percent have been copied
+        /// Calculate how many percent has been copied
         /// </summary>
         /// <param name="writeStreamLength"> Source file size</param>
         /// <param name="readStreamLength"> Current file size</param>
