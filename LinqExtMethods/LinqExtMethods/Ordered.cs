@@ -21,7 +21,7 @@ namespace LinqExtMethods
         /// </summary>
         /// <typeparam name="TKey"> The type of the key produced by keySelector.</typeparam>
         /// <param name="keySelector"> Used to extract the key for each element.</param>
-        /// <param name="keyComparer"> used to compare keys for placement in the returned sequence.</param>
+        /// <param name="keyComparer"> Used to compare keys for placement in the returned sequence.</param>
         /// /// <param name="descending"> True to sort the elements in descending order; False to sort the elements in ascending order.</param>
         public IOrderedEnumerable<TSource> CreateOrderedEnumerable<TKey>(Func<TSource, TKey> keySelector, IComparer<TKey> keyComparer, bool descending)
         {
