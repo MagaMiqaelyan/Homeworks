@@ -30,7 +30,7 @@ namespace CopyFile
             using (FileStream readStream = File.OpenRead(soureceFile))
             using (FileStream writeStream = File.OpenWrite(destFile))
             {
-                byte[] buffer = new byte[1 * 1];
+                byte[] buffer = new byte[1024 * 1024];
                 int bytesRead;
                 string old = "0";
                 
