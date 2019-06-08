@@ -4,12 +4,12 @@ using System.Text;
 
 namespace Client
 {
-    class Program
+    class TCP : INetworkService
     {
-        const int PORT_NO = 500;
-        const string SERVER_IP = "127.0.0.1";
+        int PORT_NO = 500;
+        string SERVER_IP = "127.0.0.1"; 
 
-        static void Main(string[] args)
+        public void SendMessage()
         {
             // Data to send to the server
             Console.Write("Please enter the expression\t");
@@ -28,7 +28,7 @@ namespace Client
             byte[] bytesToRead = new byte[client.ReceiveBufferSize];
             int bytesRead = nwStream.Read(bytesToRead, 0, client.ReceiveBufferSize);
             Console.WriteLine("Received : " + Encoding.ASCII.GetString(bytesToRead, 0, bytesRead));
-            Console.ReadLine();
+            nwStream.Close();
             client.Close();
         }
     }
